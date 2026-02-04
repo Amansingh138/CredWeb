@@ -10,21 +10,21 @@ export const TrustBar: React.FC = () => {
           <p className="text-xs font-bold text-gray-500 uppercase tracking-widest">Trusted by 15M+ members</p>
           <h2 className="text-3xl font-bold tracking-tight">The proof writes itself</h2>
         </div>
-        
+
         <div className="flex flex-wrap justify-center gap-12">
           <div className="flex flex-col items-center gap-2">
             <div className="flex gap-1">
-              {[1,2,3,4,5].map(i => <Star key={i} size={14} fill="white" className="text-white" />)}
+              {[1, 2, 3, 4, 5].map(i => <Star key={i} size={14} fill="#CA8A04" className="text-brand-gold" />)}
             </div>
             <p className="text-2xl font-bold">4.8 <span className="text-gray-500">/5</span></p>
             <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">App Store</p>
           </div>
-          
+
           <div className="w-[1px] h-16 bg-white/10 hidden md:block"></div>
 
           <div className="flex flex-col items-center gap-2">
-             <div className="flex gap-1">
-              {[1,2,3,4,5].map(i => <Star key={i} size={14} fill="white" className="text-white" />)}
+            <div className="flex gap-1">
+              {[1, 2, 3, 4, 5].map(i => <Star key={i} size={14} fill="#CA8A04" className="text-brand-gold" />)}
             </div>
             <p className="text-2xl font-bold">4.8 <span className="text-gray-500">/5</span></p>
             <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Play Store</p>

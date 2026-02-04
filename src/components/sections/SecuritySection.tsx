@@ -7,8 +7,8 @@ export const SecuritySection: React.FC = () => {
     <section className="py-32 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center max-w-3xl mx-auto space-y-6 mb-20">
-          <div className="w-20 h-20 bg-green-500/10 rounded-3xl flex items-center justify-center mx-auto mb-10 border border-green-500/20">
-             <ShieldCheck size={40} className="text-green-500" />
+          <div className="w-20 h-20 bg-brand-gold/10 rounded-3xl flex items-center justify-center mx-auto mb-10 border border-brand-gold/20 shadow-[0_0_30px_-10px_rgba(202,138,4,0.3)]">
+            <ShieldCheck size={40} className="text-brand-gold" />
           </div>
           <h2 className="text-4xl md:text-6xl font-extrabold tracking-tight">Your data isn't our business. Keeping it safe is.</h2>
           <p className="text-gray-400 text-lg leading-relaxed">
@@ -34,10 +34,10 @@ export const SecuritySection: React.FC = () => {
               icon: <CheckCircle2 />
             }
           ].map((item, i) => (
-            <div key={i} className="glass p-10 rounded-[40px] border-white/5 space-y-6">
-               <div className="text-gray-300">{item.icon}</div>
-               <h3 className="text-xl font-bold">{item.title}</h3>
-               <p className="text-gray-500 leading-relaxed text-sm">{item.desc}</p>
+            <div key={i} className="glass p-10 rounded-[40px] border-white/5 space-y-6 hover:border-brand-gold/20 transition-all hover:-translate-y-2 duration-300">
+              <div className="text-brand-gold/80">{item.icon}</div>
+              <h3 className="text-xl font-bold">{item.title}</h3>
+              <p className="text-gray-500 leading-relaxed text-sm">{item.desc}</p>
             </div>
           ))}
         </div>

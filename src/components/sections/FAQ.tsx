@@ -25,18 +25,18 @@ export const FAQ: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="py-32 px-6 bg-[#0a0d12]">
+    <section className="py-32 px-6 bg-brand-surface">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-extrabold tracking-tight mb-16 text-center">Frequently Asked Questions</h2>
         <div className="space-y-4">
           {FAQ_DATA.map((faq, i) => (
-            <div key={i} className="glass rounded-3xl overflow-hidden border-white/5">
-              <button 
-                className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-white/5 transition-colors"
+            <div key={i} className="glass rounded-3xl overflow-hidden border-white/5 hover:border-brand-gold/30 transition-all duration-300">
+              <button
+                className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-white/5 transition-colors cursor-pointer group"
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
               >
-                <span className="text-lg font-bold">{faq.question}</span>
-                {openIndex === i ? <ChevronUp className="text-gray-500" /> : <ChevronDown className="text-gray-500" />}
+                <span className="text-lg font-bold group-hover:text-brand-gold transition-colors">{faq.question}</span>
+                {openIndex === i ? <ChevronUp className="text-brand-gold" /> : <ChevronDown className="text-gray-500 group-hover:text-brand-gold transition-colors" />}
               </button>
               {openIndex === i && (
                 <div className="px-8 pb-8 text-gray-400 leading-relaxed animate-in slide-in-from-top-2 duration-300">
